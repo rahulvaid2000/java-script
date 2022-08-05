@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+</head>
+<body>
+    <script>
+        var a,b,c
+        a=parseInt(prompt("Type your first no."))
+        b=parseInt(prompt("Type Your Secand no."))
+        c=prompt("enter your choice")
+        document.write("<h1>Your First No.="+a)
+        document.write("<h1>Your Secand No.="+b)
+            
+
+            switch(c){
+                case "1":
+                    c=a+b
+                document.write("<h1>Total=</h1>"+c);
+                break;
+                case "2":
+                    c=a*b
+                document.write("<h1>Total=</h1> "+c);
+                break;
+                case "3":
+                    c=a/b
+                document.write("<h1>Total=</h1>"+c);
+                break;
+                case "4":
+                    c=a-b
+                document.write("<h1>Total=</h1>"+c);
+                break;
+                default:document.write("<h1>Invalid calculation</h1>")
+                
+
+            }
+
+        
+    </script>
+    
+</body>
+</html>

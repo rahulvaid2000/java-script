@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="time">
+    <label><h3>NAME</h3></label>
+    <input type="text" placeholder="Please Enter Your Name" name="" id="name">
+    <p id="result"></p>
+    <br>
+    <label><h3>Last Name</h3></label>
+    <input type="text" placeholder="Please Enter Your Name" name="" id="lastname">
+    <p id="result"></p>
+    <br>
+    <br>
+    
+    <br>
+    <label><h3>Email Address</h3></label>
+    <input type="text" placeholder="Enter Your Email Id" id="email">
+    <p id="result"></p>
+    <br>
+    <br>
+    <label><h3>Mobile no.</h3></label>
+    <input type="text" placeholder="Enter Your phone no." id="email">
+    <p id="result"></p>
+    <br>
+    <br>
+    <label><h3>Roll no.</h3></label>
+    <input type="text" placeholder="Enter Your Roll No." id="email">
+    <p id="result"></p>
+    <br>
+    <br>
+    <label><h3>Education</h3></label>
+    <input type="text" placeholder="Present Qualification" id="email">
+    <p id="result"></p>
+    <br>
+    <br>
+    <label><h3>Address</h3></label>
+    <input type="text" placeholder="Type your address" id="email">
+    <p id="result"></p>
+    <br>
+    <br>
+    <label><h3>Father's Name</h3></label>
+    <input type="text" placeholder="Enter Your Father's Name" id="email">
+    <p id="result"></p>
+    <br>
+    <br>
+    <label><h3>Mother's Name</h3></label>
+    <input type="text" placeholder="Enter Your Mother's Name" id="email">
+    <p id="result"></p>
+    <br>
+    <br>
+    <label><h3>Parent's Phone no.</h3></label>
+    <input type="text" placeholder="Enter Your Parent's no." id="email">
+    <p id="result"></p>
+    <br>
+    <br>
+<button type="submit" id="submit" onclick="vali()">SUBMIT</button>    
+
+</div>
+   
+<script>
+function vali(){
+        var name = document.getElementById=('name').value;
+        var lastname = document.getElementById=('lastname').value;
+        var email = document.getElementById=('email').value;
+ if(name === ""){
+    document.getElementById('result').innerHTML=" Fill the Requirement";
+ }
+ if (lastname === ""){
+    document.getElementById('result').innerHTML="Fill the REquirement"
+ }
+ if(email === ""){
+document.getElementById('result').innerHTML="Fill the requirement"
+ }
+    
+
+
+
+
+
+}
+</script>
+</body>
+</html>

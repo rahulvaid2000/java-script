@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.time{
+    margin-top: 5%;
+}
+.time label{
+    float: left;
+    margin-left: 25px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+#name{
+    float: left;
+    margin-left: 40px; 
+    height: 25px;
+    margin-top: 12px;
+}
+#lastname{
+    float: left;
+    margin-left: 40px; 
+    height: 25px;
+    margin-top: 12px;
+
+}
+#email{
+    margin-left: 5%; 
+    height: 25px;
+    margin-top: 12px;
+}
+button{
+    margin-left: 25%;
+    margin-top: 25px;
+    width: 8%;
+    height: 25px;
+}
+p{
+    color: red;
+}

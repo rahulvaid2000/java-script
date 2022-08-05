@@ -1,0 +1,128 @@
+x<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/brands.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/regular.min.css">
+    <link rel="stylesheet" href="css/solid.min.css">
+    <title>Gallary</title>
+</head>
+<body>
+<div class="box">
+    <div class="wheel" >
+        <div class="captain" onclick="all()">
+      <h1>ALL</h1>
+    </div>
+    <div class="item" >
+        <div class="captain" onclick="captain()">
+      <img src="images/captain/1.jpg">
+      <h1>C<span><i class="fa-regular fa-star"></i></span>ptain </h1>  
+    </div>
+</div>  
+    <div class="item" >
+        <div class="iron" onclick="iron()">
+        <img src="images/iron/4.jpg">
+        <h1><i class="fa-regular fa-gem"></i>Iron</h1>
+    </div>
+    </div>
+    <div class="item" >
+        <div class="thor" onclick="thor()">
+        <img src="images/thor/1.jpg">
+        <h1><i class="fa-solid fa-gavel"></i>Thor</h1>
+    </div>
+    </div>
+</div>
+<div class="captain" id="captain">
+    <img src="images/captain/1.jpg"  alt="" srcset="">
+    <img src="images/captain/2.jpg"  alt="" srcset="">
+    <img src="images/captain/3.jpg"  alt="" srcset="">
+    <img src="images/captain/4.jpg"  alt="" srcset="">
+    <img src="images/captain/5.jpg"  alt="" srcset="">
+    <img src="images/captain/6.jpg"  alt="" srcset="">
+</div>
+<div class="iron" id="iron">
+
+
+    <img src="images/iron/1.jpg"  alt="" srcset="">
+    <img src="images/iron/2.jpg"  alt="" srcset="">
+    <img src="images/iron/3.jpg"  alt="" srcset="">
+    <img src="images/iron/4.jpg"  alt="" srcset="">
+    <img src="images/iron/5.jpg"  alt="" srcset="">
+    <img src="images/iron/6.jpg"  alt="" srcset="">
+</div>
+<div class="thor" id="thor">  
+
+
+    <img src="images/thor/1.jpg"  alt="" srcset="">
+    <img src="images/thor/2.jpg"  alt="" srcset="">
+    <img src="images/thor/3.jpg"  alt="" srcset="">
+    <img src="images/thor/4.jpg"  alt="" srcset="">
+    <img src="images/thor/5.jpg"  alt="" srcset="">
+    <img src="images/thor/6.jpg"  alt="" srcset="">
+</div>
+<div class="time">
+<h1 class="counter">123456</h1>
+
+</div>
+
+<script src="js/all.min.js"></script>
+<script src="js/brands.min.js"></script>
+<script src="js/fontawesome.js"></script>
+<script src="js/regular.min.js"></script>
+<script src="js/solid.min.js"></script>
+<script src="js/jq.js"></script>
+<script src="js/jquery.counterup.min.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+
+    <script>
+function captain(){
+    var iron= document.getElementById('iron')
+    var captain=document.getElementById('captain')
+    var thor=document.getElementById('thor')
+    captain.style.display="block";
+    iron.style.display="none";
+    thor.style.display="none";
+}
+function iron(){
+    var iron= document.getElementById('iron')
+    var captain=document.getElementById('captain')
+    var thor=document.getElementById('thor')
+
+    captain.style.display="none";
+    iron.style.display="block";
+    thor.style.display="none";
+}
+function thor(){
+    var iron= document.getElementById('iron')
+    var captain=document.getElementById('captain')
+    var thor=document.getElementById('thor')
+    captain.style.display="none";
+    iron.style.display="none";
+    thor.style.display="block";
+}
+function all(){
+    var iron= document.getElementById('iron')
+    var captain=document.getElementById('captain')
+    var thor=document.getElementById('thor')
+    var all=document.getElementById('all')
+
+    captain.style.display="none";
+    all.style.display="block"
+    iron.style.display="none";
+    thor.style.display="none";
+}
+$(document).ready(function($) {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 1000000
+            });
+        });
+    </script>
+
+</body>
+</html>
